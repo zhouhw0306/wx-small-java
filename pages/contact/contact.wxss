@@ -1,5 +1,7 @@
 /* pages/contact/contact.wxss */
-.word{
-	text-align: center;
-	line-height: 800rpx;
+navigator{
+	margin: 10px;
+	padding: 10px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
 }

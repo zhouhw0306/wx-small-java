@@ -1,2 +1,10 @@
 <!--pages/challenge/challenge.wxml-->
-<view class="word">敬请期待</view>
+<!-- <view class="word">敬请期待</view> -->
+
+<form bindsubmit="btnSub">
+	<view><input name="type" type="number" placeholder="类型"/></view>
+	<view><input name="title" placeholder="标题"/></view>
+	<view><textarea maxlength="-1" name="context" placeholder="内容"/></view>
+	<button type="primary" form-type="submit">提交</button>
+	<button form-type="reset">清空</button>
+</form>

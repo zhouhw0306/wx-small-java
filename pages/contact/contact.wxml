@@ -1,2 +1,4 @@
 <!--pages/contact/contact.wxml-->
-<view class="word">敬请期待</view>
+<navigator url="../aboutme/aboutme">
+	<image src="/images/about.png" style="width: 15px;" mode="widthFix"/> 关于我们	
+</navigator>

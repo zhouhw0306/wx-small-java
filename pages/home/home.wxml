@@ -2,33 +2,35 @@
 <navigator url="../detailSE/detailSE">
 	<image src="/images/java.png" style="width: 15px;" mode="widthFix"/> JavaSE	  <!-- type1 -->
 </navigator>
-<navigator>
+
+<navigator url="../detailJDBC/detailJDBC">
 	<image src="/images/jdbc.png" style="width: 12px;" mode="widthFix"/> JDBC	<!-- type2 -->
 </navigator>
-<navigator>
+
+<navigator url="../detailServlet/detailServlet">
 	<image src="/images/servlet.png" style="width: 18px;" mode="widthFix"/> Servlet	 <!-- type3 -->
 </navigator>
-<navigator>
+<navigator url="../detailSpring/detailSpring">
 	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> Spring	<!-- type4 -->
 </navigator>
-<navigator>
+<navigator url="../detailMybatis/detailMybatis">
 	<image src="/images/mybatis.png" style="width: 15px;" mode="widthFix"/> Mybatis	  <!-- type5 -->
 </navigator>
-<navigator>
+<navigator url="../detailSpring/detailSpring">
 	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringMVC	<!-- type6 -->
 </navigator>
-<navigator>
+<navigator url="../detailSpringMVC/detailSpringMVC">
 	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringBoot	<!-- type7 -->
 </navigator>
-<navigator>
+<navigator url="../detailSpringboot/detailSpringboot">
 	<image src="/images/cloud.png" style="width: 15px;" mode="widthFix"/> SpringCloud	<!-- type8 -->
 </navigator>
-<navigator>
+<navigator url="../detailDubbo/detailDubbo">
 	<image src="/images/dubbo.png" style="width: 15px;" mode="widthFix"/> Dubbo 	<!-- type9 -->
 </navigator>
-<navigator>
+<navigator url="../detailRedis/detailRedis">
 	<image src="/images/redis.png" style="width: 15px;" mode="widthFix"/> Redis  	<!-- type10 -->
 </navigator>
-<navigator>
+<navigator url="../detailDocker/detailDocker">
 	<image src="/images/docker.png" style="width: 15px;" mode="widthFix"/> Docker	<!-- type11 -->
 </navigator>
