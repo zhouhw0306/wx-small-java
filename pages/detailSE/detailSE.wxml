@@ -1,0 +1,5 @@
+<!--pages/detailSE/detailSE.wxml-->
+<view wx:for="{{dataList}}" wx:key="_id">
+	<view class="char">{{item.title}}</view>
+	<view>{{item.context}}</view>
+</view>

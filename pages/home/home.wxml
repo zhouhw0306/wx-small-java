@@ -1,0 +1,34 @@
+<!--pages/home/home.wxml-->
+<navigator url="../detailSE/detailSE">
+	<image src="/images/java.png" style="width: 15px;" mode="widthFix"/> JavaSE	  <!-- type1 -->
+</navigator>
+<navigator>
+	<image src="/images/jdbc.png" style="width: 12px;" mode="widthFix"/> JDBC	<!-- type2 -->
+</navigator>
+<navigator>
+	<image src="/images/servlet.png" style="width: 18px;" mode="widthFix"/> Servlet	 <!-- type3 -->
+</navigator>
+<navigator>
+	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> Spring	<!-- type4 -->
+</navigator>
+<navigator>
+	<image src="/images/mybatis.png" style="width: 15px;" mode="widthFix"/> Mybatis	  <!-- type5 -->
+</navigator>
+<navigator>
+	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringMVC	<!-- type6 -->
+</navigator>
+<navigator>
+	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringBoot	<!-- type7 -->
+</navigator>
+<navigator>
+	<image src="/images/cloud.png" style="width: 15px;" mode="widthFix"/> SpringCloud	<!-- type8 -->
+</navigator>
+<navigator>
+	<image src="/images/dubbo.png" style="width: 15px;" mode="widthFix"/> Dubbo  	<!-- type9 -->
+</navigator>
+<navigator>
+	<image src="/images/redis.png" style="width: 15px;" mode="widthFix"/> Redis  	<!-- type10 -->
+</navigator>
+<navigator>
+	<image src="/images/docker.png" style="width: 15px;" mode="widthFix"/> Docker	<!-- type11 -->
+</navigator>

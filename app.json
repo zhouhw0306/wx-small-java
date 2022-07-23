@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/challenge/challenge",
+    "pages/contact/contact",
+    "pages/detailSE/detailSE",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f5f5f5",
+    "navigationBarTitleText": "Java从入门到入土",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text" : "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-active.png"
+      },
+      {
+        "pagePath": "pages/challenge/challenge",
+        "text" : "挑战",
+        "iconPath": "/images/challenge.png",
+        "selectedIconPath": "/images/challenge-active.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text" : "联系我们",
+        "iconPath": "/images/contact.png",
+        "selectedIconPath": "/images/contact-active.png"
+      }
+    ]
+},  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
