@@ -1,2 +1,2 @@
 <!--pages/challenge/challenge.wxml-->
-<text>pages/challenge/challenge.wxml</text>
+<view class="word">敬请期待</view>

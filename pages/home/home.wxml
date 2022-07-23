@@ -24,7 +24,7 @@
 	<image src="/images/cloud.png" style="width: 15px;" mode="widthFix"/> SpringCloud	<!-- type8 -->
 </navigator>
 <navigator>
-	<image src="/images/dubbo.png" style="width: 15px;" mode="widthFix"/> Dubbo  	<!-- type9 -->
+	<image src="/images/dubbo.png" style="width: 15px;" mode="widthFix"/> Dubbo 	<!-- type9 -->
 </navigator>
 <navigator>
 	<image src="/images/redis.png" style="width: 15px;" mode="widthFix"/> Redis  	<!-- type10 -->
