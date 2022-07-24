@@ -1,2 +1,18 @@
 <!--pages/dowork/dowork.wxml-->
-<view class="word">敬请期待</view>
+<!-- <view class="word">敬请期待</view> -->
+<view>
+	<view style="font-size: small;color: #2ABF99;">{{data.qsType}}</view>
+	<view style="color: grey;">{{data.question}}</view>
+	<view style="color: grey;" bindtap="submit" data-option='A'>A: {{data.optionA}}</view>
+	<view style="color: grey;" bindtap="submit" data-option='B'>B: {{data.optionB}}</view>
+	<view style="color: grey;" bindtap="submit" data-option='C'>C :{{data.optionC}}</view>
+	<view style="color: grey;" bindtap="submit" data-option='D'>D: {{data.optionD}}</view>
+	<text class="small" wx:if="{{end}}" style="color: #2ABF99;">正确答案: {{data.result}}</text>
+	<text class="small two" wx:if="{{flag=='1'}}" style="color: #2ABF99;">你的答案: {{youOption}} </text>
+	<text class="small" wx:if="{{flag=='-1'}}" style="color: #d13a41;">你的答案:  {{youOption}} </text>
+	<text class="small" wx:if="{{flag=='0'}}" style="color: grey;">你的答案: 空 </text>
+	<view wx:if="{{end}}" style="color: grey;">{{data.analysis}}</view>
+</view>
+<view style="height: 100%;width: 100%;text-align: center;margin:0; padding:0px;">
+	<button style="clear: none;position: absolute; bottom: 80px;margin-left: 20%;" type="primary">下一题</button>
+</view>

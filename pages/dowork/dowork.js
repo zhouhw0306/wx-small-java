@@ -6,6 +6,43 @@ Page({
      */
     data: {
 
+        data : {
+            qsType : '单选题',
+            question : '线性表的顺序存储结构是一种（）的存储结构',
+            optionA : '随机存取',
+            optionB : '顺序存取',
+            optionC : '索引存取',
+            optionD : '散列存取',
+            result : 'A',
+            analysis : '暂无解析'
+        },
+        youOption : '空',
+        flag : '',
+        end : false,
+        first : true
+    },
+
+
+    submit(e){
+
+        if(this.data.first){
+            this.setData({
+                youOption : e.target.dataset.option
+            })
+            
+            if(e.target.dataset.option == this.data.data.result){
+                this.setData({
+                    flag : '1',
+                    end :  true
+                })
+                return
+            }
+            this.setData({
+                flag : '-1',
+                end :  true,
+                first : false
+            })
+        }
     },
 
     /**

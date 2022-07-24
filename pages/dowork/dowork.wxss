@@ -1,5 +1,17 @@
 /* pages/dowork/dowork.wxss */
-.word{
+/* .word{
 	text-align: center;
 	line-height: 800rpx;
+} */
+view{
+	margin: 10px;
+	padding: 10px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+}
+
+.small{
+	font-size: small;
+	padding-left: 20px;
+	
 }
