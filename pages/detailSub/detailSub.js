@@ -1,4 +1,4 @@
-// pages/detailSE/detailSE.js
+// pages/detailSub/detailSub.js
 const db = wx.cloud.database()
 Page({
 
@@ -6,32 +6,28 @@ Page({
      * 页面的初始数据
      */
     data: {
-        dataList : ""
-
-    },
-
-    getData(){
-        
+        data : ""
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-        
+        db.collection("topicList").doc(options._id).get({
+            success : res=>{
+                this.setData({
+                    data : res.data
+                })
+            }
+        })
+        console.log(this.data)
     },
 
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady() {
-        db.collection("topicList").where({type : 1}).get({
-            success : res=>{
-                this.setData({
-                    dataList : res.data
-                })
-            }
-        })
+
     },
 
     /**

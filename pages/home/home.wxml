@@ -1,44 +1,44 @@
 <!--pages/home/home.wxml-->
-<navigator url="../detailSE/detailSE">
+<view bindtap="todetail" data-type="1">
 	<image src="/images/java.png" style="width: 15px;" mode="widthFix"/> JavaSE	  <!-- type1 -->
-</navigator>
+</view>
 
-<navigator url="../detailJDBC/detailJDBC">
+<view bindtap="todetail" data-type="2">
 	<image src="/images/jdbc.png" style="width: 12px;" mode="widthFix"/> JDBC	<!-- type2 -->
-</navigator>
+</view>
 
-<navigator url="../detailServlet/detailServlet">
+<view bindtap="todetail" data-type="3">
 	<image src="/images/servlet.png" style="width: 18px;" mode="widthFix"/> Servlet	 <!-- type3 -->
-</navigator>
+</view>
 
-<navigator url="../detailSpring/detailSpring">
+<view bindtap="todetail" data-type="4">
 	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> Spring	<!-- type4 -->
-</navigator>
+</view>
 
-<navigator url="../detailMybatis/detailMybatis">
+<view bindtap="todetail" data-type="5">
 	<image src="/images/mybatis.png" style="width: 15px;" mode="widthFix"/> Mybatis	  <!-- type5 -->
-</navigator>
+</view>
 
-<navigator url="../detailSpringMVC/detailSpringMVC">
+<view bindtap="todetail" data-type="6">
 	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringMVC	<!-- type6 -->
-</navigator>
+</view>
 
-<navigator url="../detailSpringboot/detailSpringboot">
+<view bindtap="todetail" data-type="7">
 	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringBoot	<!-- type7 -->
-</navigator>
+</view>
 
-<navigator url="../detailSpringCloud/detailSpringCloud">
+<view bindtap="todetail" data-type="8">
 	<image src="/images/cloud.png" style="width: 15px;" mode="widthFix"/> SpringCloud	<!-- type8 -->
-</navigator>
+</view>
 
-<navigator url="../detailDubbo/detailDubbo">
+<view bindtap="todetail" data-type="9">
 	<image src="/images/dubbo.png" style="width: 15px;" mode="widthFix"/> Dubbo 	<!-- type9 -->
-</navigator>
+</view>
 
-<navigator url="../detailRedis/detailRedis">
+<view bindtap="todetail" data-type="10">
 	<image src="/images/redis.png" style="width: 15px;" mode="widthFix"/> Redis  	<!-- type10 -->
-</navigator>
+</view>
 
-<navigator url="../detailDocker/detailDocker">
+<view bindtap="todetail" data-type="11">
 	<image src="/images/docker.png" style="width: 15px;" mode="widthFix"/> Docker	<!-- type11 -->
-</navigator>
+</view>

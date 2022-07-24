@@ -1,19 +1,12 @@
 {
+  "lazyCodeLoading": "requiredComponents",
   "pages":[
     "pages/home/home",
-    "pages/challenge/challenge",
+    "pages/dowork/dowork",
     "pages/contact/contact",
-    "pages/detailSE/detailSE",
-    "pages/detailJDBC/detailJDBC",
-    "pages/detailServlet/detailServlet",
-    "pages/detailSpring/detailSpring",
-    "pages/detailMybatis/detailMybatis",
-    "pages/detailSpringMVC/detailSpringMVC",
-    "pages/detailSpringboot/detailSpringboot",
-    "pages/detailSpringCloud/detailSpringCloud",
-    "pages/detailDubbo/detailDubbo",
-    "pages/detailRedis/detailRedis",
-    "pages/detailDocker/detailDocker",
+    "pages/challenge/challenge",
+    "pages/detail/detail",
+    "pages/detailSub/detailSub",
     "pages/aboutme/aboutme",
     "pages/index/index",
     "pages/logs/logs"
@@ -34,7 +27,7 @@
         "selectedIconPath": "/images/home-active.png"
       },
       {
-        "pagePath": "pages/challenge/challenge",
+        "pagePath": "pages/dowork/dowork",
         "text" : "挑战",
         "iconPath": "/images/challenge.png",
         "selectedIconPath": "/images/challenge-active.png"

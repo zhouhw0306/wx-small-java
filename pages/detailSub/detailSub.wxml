@@ -1,0 +1,9 @@
+<!--pages/detailSub/detailSub.wxml-->
+<text class="char" user-select>
+{{data.title}}
+</text>
+<view style="white-space: pre-wrap" user-select>
+{{data.context}}
+</view>
+
+

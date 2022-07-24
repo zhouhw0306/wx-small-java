@@ -1,0 +1,5 @@
+/* pages/dowork/dowork.wxss */
+.word{
+	text-align: center;
+	line-height: 800rpx;
+}

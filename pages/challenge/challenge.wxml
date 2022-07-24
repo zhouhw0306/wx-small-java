@@ -1,5 +1,4 @@
 <!--pages/challenge/challenge.wxml-->
-<!-- <view class="word">敬请期待</view> -->
 
 <form bindsubmit="btnSub">
 	<view><input name="type" type="number" placeholder="类型"/></view>

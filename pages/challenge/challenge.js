@@ -14,8 +14,8 @@ Page({
         var type = parseInt(res.detail.value.type); //转number类型
         var title = res.detail.value.title;
         var context = res.detail.value.context;
-        //var {type,title,context} = res.detail.value;
-        //var resVlu = res.detail.value;
+        // var {type,title,context} = res.detail.value;
+        // var resVlu = res.detail.value;
         wx.showLoading({
           title: '数据提交中',
         })
@@ -29,6 +29,19 @@ Page({
             console.log(res)
             wx.hideLoading()
         })
+
+        //更新
+        // db.collection("topicList").doc('16db756f62dbc4f40bed4a5952cbbbd8').update({
+        //     data:{
+        //         // type : type,
+        //         // title : title,
+        //         context : context
+        //     }
+        // }).then(res=>{
+        //     console.log(res)
+        //     wx.hideLoading()
+        // })
+
     },
 
 

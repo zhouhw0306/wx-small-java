@@ -8,6 +8,15 @@ Page({
 
     },
 
+    todetail(e){
+        //let type = parseInt((e.target.dataset.type),
+        wx.navigateTo({
+          url: '../detail/detail?type='+e.target.dataset.type
+        })
+    },
+        
+    
+
     /**
      * 生命周期函数--监听页面加载
      */
