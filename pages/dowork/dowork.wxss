@@ -4,14 +4,34 @@
 	line-height: 800rpx;
 } */
 view{
-	margin: 10px;
-	padding: 10px;
+	margin: 19rpx;
+	padding: 19rpx;
 	background-color: rgb(255, 255, 255);
-	border-radius: 10px;
+	border-radius: 19rpx;
 }
 
 .small{
 	font-size: small;
 	padding-left: 20px;
-	
+
+}
+
+.title{
+	font-size: small;
+	color: #2ABF99;
+	border: 1rpx solid;
+	border-color: #2ABF99;
+	border-radius: 10rpx;
+}
+
+.defult{
+	color: gray;
+}
+
+.right{
+	background-color: #a1f3df;
+}
+
+.error{
+	background-color: rgb(245, 158, 158);
 }

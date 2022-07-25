@@ -1,0 +1,14 @@
+<!--pages/insert/insert.wxml-->
+<form bindsubmit="btnSub">
+	<view><input name="type" placeholder="专业类型"/></view>
+	<view><input name="qstype" placeholder="题型"/></view>
+	<view><input name="question" placeholder="问题"/></view>
+	<view><input name="optionA" placeholder="A选项"/></view>
+	<view><input name="optionB" placeholder="B选项"/></view>
+	<view><input name="optionC" placeholder="C选项"/></view>
+	<view><input name="optionD" placeholder="D选项"/></view>
+	<view><input name="result" placeholder="答案"/></view>
+	<view><textarea maxlength="-1" name="analysis" placeholder="解析"/></view>
+	<button type="primary" form-type="submit">提交</button>
+	<button form-type="reset">清空</button>
+</form>

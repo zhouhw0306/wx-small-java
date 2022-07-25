@@ -1,5 +1,4 @@
-/* pages/challenge/challenge.wxss */
-
+/* pages/insert/insert.wxss */
 input,textarea{
 	border-radius: 2px solid #888;
 }

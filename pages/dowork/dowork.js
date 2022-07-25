@@ -1,4 +1,5 @@
 // pages/dowork/dowork.js
+const db = wx.cloud.database()
 Page({
 
     /**
@@ -6,20 +7,21 @@ Page({
      */
     data: {
 
-        data : {
-            qsType : '单选题',
-            question : '线性表的顺序存储结构是一种（）的存储结构',
-            optionA : '随机存取',
-            optionB : '顺序存取',
-            optionC : '索引存取',
-            optionD : '散列存取',
-            result : 'A',
-            analysis : '暂无解析'
-        },
-        youOption : '空',
-        flag : '',
-        end : false,
-        first : true
+        data : '',
+        // data : {
+        //     qsType : '单选题',
+        //     question : '线性表的顺序存储结构是一种（  ）的存储结构',
+        //     optionA : '随机存取',
+        //     optionB : '顺序存取',
+        //     optionC : '索引存取',
+        //     optionD : '散列存取',
+        //     result : 'A',
+        //     analysis : '暂无解析'
+        // },
+        youOption : '空', //用户选择的选项
+        flag : '',  
+        end : false, //是否显示答案
+        first : true //该题是否第一次提交
     },
 
 
@@ -27,9 +29,10 @@ Page({
 
         if(this.data.first){
             this.setData({
-                youOption : e.target.dataset.option
+                youOption : e.target.dataset.option,
+                first : false
             })
-            
+            //判断是否回答正确
             if(e.target.dataset.option == this.data.data.result){
                 this.setData({
                     flag : '1',
@@ -39,17 +42,33 @@ Page({
             }
             this.setData({
                 flag : '-1',
-                end :  true,
-                first : false
+                end :  true
             })
         }
+    },
+
+
+    next(){
+        let num = Math.floor(Math.random()*4)
+        db.collection("bank").skip(num).limit(1).get({
+            success : res=>{
+                this.setData({
+                    data : res.data[0],
+                    youOption : '空', //用户选择的选项
+                    flag : '',  
+                    end : false, //是否显示答案
+                    first : true //该题是否第一次提交
+                })
+            } 
+        }) 
+        
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        this.next()     
     },
 
     /**
