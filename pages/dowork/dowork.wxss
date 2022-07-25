@@ -29,9 +29,9 @@ view{
 }
 
 .right{
-	background-color: #a1f3df;
+	background-color: #b9fceb;
 }
 
 .error{
-	background-color: rgb(245, 158, 158);
+	background-color: rgb(250, 210, 210);
 }

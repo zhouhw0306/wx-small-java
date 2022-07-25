@@ -21,7 +21,8 @@ Page({
         youOption : '空', //用户选择的选项
         flag : '',  
         end : false, //是否显示答案
-        first : true //该题是否第一次提交
+        first : true, //该题是否第一次提交
+        total : 0
     },
 
 
@@ -49,7 +50,8 @@ Page({
 
 
     next(){
-        let num = Math.floor(Math.random()*4)
+        let num = Math.floor(Math.random()*this.data.total)
+        console.log(num)
         db.collection("bank").skip(num).limit(1).get({
             success : res=>{
                 this.setData({
@@ -68,7 +70,13 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-        this.next()     
+        db.collection("bank").count()
+        .then(res=>{
+            this.setData({
+                total : res.total
+            })
+        })  
+        this.next()
     },
 
     /**

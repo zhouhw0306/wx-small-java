@@ -7,7 +7,6 @@
     "pages/detail/detail",
     "pages/detailSub/detailSub",
     "pages/aboutme/aboutme",
-    "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
