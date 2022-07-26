@@ -1,44 +1,44 @@
 <!--pages/home/home.wxml-->
-<view bindtap="todetail" data-type="1">
+<view bindtap="todetail" data-type="1" hover-class="hoverh">
 	<image src="/images/java.png" style="width: 15px;" mode="widthFix"/> JavaSE	  <!-- type1 -->
 </view>
 
-<view bindtap="todetail" data-type="2">
+<view bindtap="todetail" data-type="2" hover-class="hoverh">
 	<image src="/images/jdbc.png" style="width: 12px;" mode="widthFix"/> JDBC	<!-- type2 -->
 </view>
 
-<view bindtap="todetail" data-type="3">
+<view bindtap="todetail" data-type="3" hover-class="hoverh">
 	<image src="/images/servlet.png" style="width: 18px;" mode="widthFix"/> Servlet	 <!-- type3 -->
 </view>
 
-<view bindtap="todetail" data-type="4">
+<view bindtap="todetail" data-type="4" hover-class="hoverh">
 	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> Spring	<!-- type4 -->
 </view>
 
-<view bindtap="todetail" data-type="5">
+<view bindtap="todetail" data-type="5" hover-class="hoverh">
 	<image src="/images/mybatis.png" style="width: 15px;" mode="widthFix"/> Mybatis	  <!-- type5 -->
 </view>
 
-<view bindtap="todetail" data-type="6">
+<view bindtap="todetail" data-type="6" hover-class="hoverh">
 	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringMVC	<!-- type6 -->
 </view>
 
-<view bindtap="todetail" data-type="7">
+<view bindtap="todetail" data-type="7" hover-class="hoverh">
 	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringBoot	<!-- type7 -->
 </view>
 
-<view bindtap="todetail" data-type="8">
+<view bindtap="todetail" data-type="8" hover-class="hoverh">
 	<image src="/images/cloud.png" style="width: 15px;" mode="widthFix"/> SpringCloud	<!-- type8 -->
 </view>
 
-<view bindtap="todetail" data-type="9">
+<view bindtap="todetail" data-type="9" hover-class="hoverh">
 	<image src="/images/dubbo.png" style="width: 15px;" mode="widthFix"/> Dubbo 	<!-- type9 -->
 </view>
 
-<view bindtap="todetail" data-type="10">
+<view bindtap="todetail" data-type="10" hover-class="hoverh">
 	<image src="/images/redis.png" style="width: 15px;" mode="widthFix"/> Redis  	<!-- type10 -->
 </view>
 
-<view bindtap="todetail" data-type="11">
+<view bindtap="todetail" data-type="11" hover-class="hoverh">
 	<image src="/images/docker.png" style="width: 15px;" mode="widthFix"/> Docker	<!-- type11 -->
 </view>

@@ -1,4 +1,28 @@
 <!--pages/contact/contact.wxml-->
-<navigator url="../aboutme/aboutme">
-	<image src="/images/about.png" style="width: 15px;" mode="widthFix"/> 关于我们	
-</navigator>
+<!-- <view class='top' wx:if='{{!yincang}}'>
+ <image class='touxiang' src='{{yonghu.avatarUrl}}'></image>
+ <text class='name'>{{yonghu.nickName}}</text>
+</view>
+<button wx:if='{{yincang}}' open-type="getUserInfo" type='primary' lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button> -->
+<!-- 用户授权,则显示头像 昵称 -->
+<view class="header" wx:if="{{isShowUserName}}" bindtap="quit">
+	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+	<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="header" wx:if="{{!isShowUserName}}" bindtap="getUserProfile">
+	<image class="userinfo-avatar" src="/images/touxi.png" ></image>
+	<text class="userinfo-nickname" style="color: #3f3f3f;">未登录</text>
+</view>
+
+<!-- 分割线 -->
+<view class='fengexian'></view>
+<!-- 关于我们 -->
+<view hover-class="hoverh" class='kefu' bindtap="me" >
+	<image src="/images/about.png" style="width: 20px;" mode="widthFix"/><text class='button_title'> 关于我们</text>
+</view>
+<!-- 分割线 -->
+<view class='fengexian'></view>
+<!-- 反馈与建议 -->
+<button hover-class="hoverh" class='button' open-type="feedback" style="width: 100%;padding: 10px;" >
+	<image src="/images/fankui.png" style="width: 20px;" mode="widthFix"/><text class='button_title'> 反馈建议</text>
+</button>

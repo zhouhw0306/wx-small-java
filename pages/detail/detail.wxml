@@ -1,4 +1,4 @@
 <!--pages/detail/detail.wxml-->
-<view wx:for="{{dataList}}" wx:key="_id">
-	<view class="char" bindtap="toSubDetail" data-_id="{{item._id}}">{{item.title}}</view>
+<view wx:for="{{dataList}}" wx:key="_id" hover-class="hoverh" >
+	<view hover-class="hoverh" class="char" bindtap="toSubDetail" data-_id="{{item._id}}">{{item.title}}</view>
 </view>

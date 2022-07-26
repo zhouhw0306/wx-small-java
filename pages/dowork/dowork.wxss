@@ -8,12 +8,12 @@ view{
 	padding: 19rpx;
 	background-color: rgb(255, 255, 255);
 	border-radius: 19rpx;
+	font-weight: 400;
 }
 
 .small{
 	font-size: small;
 	padding-left: 20px;
-
 }
 
 .title{

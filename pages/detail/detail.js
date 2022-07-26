@@ -34,7 +34,6 @@ Page({
             this.setData({
                 dataList : res.result.data
             })
-            console.log(res.result.data)
         })
 
         // db.collection("topicList").where({type : parseInt(options.type)}).get({

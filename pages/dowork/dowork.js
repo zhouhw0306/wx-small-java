@@ -22,7 +22,7 @@ Page({
         flag : '',  
         end : false, //是否显示答案
         first : true, //该题是否第一次提交
-        total : 0
+        total : 20 //题库数量
     },
 
 
@@ -51,7 +51,6 @@ Page({
 
     next(){
         let num = Math.floor(Math.random()*this.data.total)
-        console.log(num)
         db.collection("bank").skip(num).limit(1).get({
             success : res=>{
                 this.setData({

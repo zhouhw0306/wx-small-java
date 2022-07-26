@@ -32,9 +32,9 @@
       },
       {
         "pagePath": "pages/contact/contact",
-        "text" : "联系我们",
-        "iconPath": "/images/contact.png",
-        "selectedIconPath": "/images/contact-active.png"
+        "text" : "我的",
+        "iconPath": "/images/me.png",
+        "selectedIconPath": "/images/me-active.png"
       }
     ]
 },  
