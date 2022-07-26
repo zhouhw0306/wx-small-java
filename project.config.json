@@ -19,7 +19,7 @@
         "minified": true,
         "autoAudits": false,
         "newFeature": false,
-        "uglifyFileName": false,
+        "uglifyFileName": true,
         "uploadWithSourceMap": true,
         "useIsolateContext": true,
         "nodeModules": false,

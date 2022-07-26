@@ -33,8 +33,7 @@ Page({
     //退出登陆
     quit(){
         let that = this
-        wx.showModal({
-            
+        wx.showModal({     
             title : "退出登录",
             content : "是否退出登录",
             success(res){
@@ -48,15 +47,12 @@ Page({
                       title: '已退出',
                     })
                 }
-                
-
+              
             }
 
-        })
-        
+        })     
 
     },
-
 
     me(){
         wx.navigateTo({
