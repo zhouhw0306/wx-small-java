@@ -16,13 +16,15 @@ Page({
     upimages(){
         let that = this
         wx.showActionSheet({
-          itemList: ['上传图片','上传视频'],
+          //itemList: ['上传图片','上传视频'],
+          itemList: ['上传图片'],
           success(res){
               if(res.tapIndex == 0){  
                   
                   wx.chooseMedia({
                     count: 9,
                     sizeType: ['original'],
+                    mediaType :['image'],
                     sourceType:['album','camera'],
                     success(res){
                         wx.showLoading({

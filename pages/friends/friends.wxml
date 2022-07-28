@@ -52,6 +52,7 @@
 			<view style="margin-left: 12rpx;font-size: 9pt;color: darkgray;margin-top: 12rpx;">
 				<text>浏览:</text>
 				<text style="color: #546ae6;margin-left: 10rpx;">{{item.look}}</text>
+				<text wx:if="{{openid==item._openid}}" style="color: #bb1414;margin-left: 10rpx; margin-left: 20rpx;" catchtap="delete" data-_id="{{item._id}}">删除</text>
 			</view>
 			<!--时间-->
 			<view style="margin-left: 12rpx;font-size: 9pt;color: #7F7F7F;margin-top: 12rpx;">{{item.time}}</view>

@@ -2,13 +2,11 @@
 <view class="main">
     <view style="height: 20rpx;"></view>
 	<view style="text-align: center;font-size: 21px;">声明</view>
-	<view style="margin-top: 50rpx; margin-left: 30rpx;">
-		题目收集来源于网络,如有侵权联系:
+	<view style="margin-top: 50rpx; margin-left: 38rpx;margin-right: 30rpx;">
+		1. 题目收集来源于网络,如有侵权联系:<text style="color: crimson;margin-left: 20rpx;">QQ2466864587</text>
 	</view>
-	<view style="color: crimson;margin-left: 30rpx;">
-		QQ2466864587
-	</view>
-	<view>
-		发布不当提问或违反相关法律法规,将被封禁,谢谢配合
+	
+	<view style="margin-left: 38rpx;margin-right: 50rpx;">
+		2. 发布不当提问或违反相关法律法规,将被封禁,谢谢配合
 	</view>
 </view>

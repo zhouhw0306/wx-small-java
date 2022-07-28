@@ -7,7 +7,8 @@ Page({
      */
     data: {
 
-        list:[]
+        list:[],
+        openid : "oB0bP5CYzznfkmIy81JAVmZEvkBw"
     },
 
     //跳转详情
@@ -62,6 +63,30 @@ Page({
 
     },
 
+    //删除
+    delete(e){
+        let id = e.target.dataset._id
+        wx.showModal({
+          title : "删除动态",
+          content : "确定删除,删除后不可恢复",
+          success(res){
+              if(res.confirm == true){
+                  db.collection("friends").doc(id).remove()
+                  .then(res=>{
+                      wx.showToast({
+                        title: '删除成功',
+                        icon :"none"
+                      })
+                      wx.switchTab({
+                        url: '/pages/friends/friends',
+                      })
+                  })
+              }
+          }
+
+        })
+        
+    },
     /**
      * 生命周期函数--监听页面加载
      */
