@@ -1,1 +1,7 @@
 /* pages/aboutme/aboutme.wxss */
+.main{
+    margin: 80rpx;
+	height: 1200rpx;
+	background-color: white;
+	border-radius: 30rpx;
+}

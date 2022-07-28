@@ -29,9 +29,11 @@ view{
 }
 
 .right{
-	background-color: #b9fceb;
+	/* background-color: #b9fceb; */
+	background-image: linear-gradient(to right,#b9fceb,#e5f5f1);
 }
 
 .error{
-	background-color: rgb(250, 210, 210);
+	/* background-color: rgb(250, 210, 210); */
+	background-image: linear-gradient(to right,rgb(250, 210, 210),rgb(253, 243, 243));
 }

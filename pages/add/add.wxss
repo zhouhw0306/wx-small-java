@@ -1,0 +1,48 @@
+/* pages/add/add.wxss */
+.input-wrap{
+
+	margin: 20rpx 40rpx;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 20rpx 30rpx;
+}
+
+.input-text{
+	height: 200rpx;
+	width: 100%;
+	border-bottom: 1rpx solid white;
+}
+
+.img-wrap{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 20rpx 30rpx;
+}
+
+.one-image{
+	position: relative;
+	margin-right: 10rpx;
+}
+
+.img-choose{
+	width: 210rpx;
+	height: 210rpx;
+}
+
+.img-delete{
+	widows: 30rpx;
+	height: 30rpx;
+	position: absolute;
+	left: 180rpx;
+	top: 4rpx;
+}
+
+
+.img-choose{
+	width: 210rpx;
+	height: 210px;
+	border: 1rpx solid white;
+
+}

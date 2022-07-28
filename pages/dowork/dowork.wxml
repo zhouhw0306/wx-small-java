@@ -1,5 +1,4 @@
 <!--pages/dowork/dowork.wxml-->
-<!-- <view class="word">敬请期待</view> -->
 <view>
 	<text class="title" wx:if="{{data.qsType=='1'}}">单选题</text>
 	<view style="color: grey;">{{data.question}}</view>
@@ -15,7 +14,7 @@
 </view>
 
 <view wx:if="{{end}}" style="height: 100%;width: 100%;text-align: center;margin:0; padding:0px;">  
-<button style="clear: none;position: absolute; bottom: 80px;margin-left: 28%;" type="primary" plain bindtap="next">下一题</button>
+	<button style="clear: none;position: absolute; bottom: 80px;margin-left: 28%;" type="primary" plain bindtap="next">下一题</button>
 </view>
 	
 

@@ -1,0 +1,18 @@
+<!--pages/add/add.wxml-->
+
+<form bindsubmit="submitform">
+	<view class="input-wrap">
+		<textarea name="content" placeholder="我的技术心得..." class="input-text" maxlength="-1" name="contain"></textarea>
+	</view>
+
+
+	<view style="display: flex; flex-direction: row;margin: 0rpx 12rpx;flex-wrap: wrap;">
+		<block wx:for="{{images}}" wx:key="index">
+			<image bindtap="lookimages" data-src="{{item}}" style="width: 32%;margin-left: 5rpx;" mode="widthFix" src="{{item}}"></image>
+		</block>
+
+		<image bindtap="upimages" style="width: 220rpx;height: 220rpx;border: 1rpx solid rgb(161, 156, 156);margin-bottom: 50rpx;" src="/images/add.png"></image>
+	</view>
+	
+	<button form-type="submit" type="primary" plain style="color: rgb(135, 204, 103);border-color: rgb(135, 204, 10);border-radius: 30rpx;">分享</button>
+</form>

@@ -3,11 +3,15 @@
   "pages":[
     "pages/home/home",
     "pages/dowork/dowork",
+    "pages/friends/friends",
+    "pages/friDetail/friDetail",
+    "pages/add/add",
     "pages/contact/contact",
     "pages/detail/detail",
     "pages/detailSub/detailSub",
     "pages/aboutme/aboutme",
     "pages/logs/logs"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -15,6 +19,7 @@
     "navigationBarTitleText": "Java从入门到入土",
     "navigationBarTextStyle":"black"
   },
+
   "tabBar": {
     "selectedColor": "#1296db",
     "list": [
@@ -29,6 +34,12 @@
         "text" : "挑战",
         "iconPath": "/images/challenge.png",
         "selectedIconPath": "/images/challenge-active.png"
+      },
+      {
+        "pagePath": "pages/friends/friends",
+        "text" : "广场",
+        "iconPath": "/images/friends.png",
+        "selectedIconPath": "/images/friends-active.png"
       },
       {
         "pagePath": "pages/contact/contact",

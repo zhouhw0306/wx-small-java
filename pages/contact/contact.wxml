@@ -18,11 +18,11 @@
 <view class='fengexian'></view>
 <!-- 关于我们 -->
 <view hover-class="hoverh" class='kefu' bindtap="me" >
-	<image src="/images/about.png" style="width: 20px;" mode="widthFix"/><text class='button_title'> 关于我们</text>
+	<image src="/images/about.png" style="width: 20px;vertical-align: top;" mode="widthFix"/><text class='button_title'> 关于我们</text>
 </view>
 <!-- 分割线 -->
 <view class='fengexian'></view>
 <!-- 反馈与建议 -->
 <button hover-class="hoverh" class='button' open-type="feedback" style="width: 100%;padding: 10px;" >
-	<image src="/images/fankui.png" style="width: 20px;" mode="widthFix"/><text class='button_title'> 反馈建议</text>
+	<image src="/images/fankui.png" style="width: 20px;vertical-align:middle;" mode="widthFix"/><text class='button_title'> 反馈建议</text>
 </button>

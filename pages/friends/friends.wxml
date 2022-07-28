@@ -1,0 +1,61 @@
+<!--pages/friends/friends.wxml-->
+<view style="position: absolute;top: 10rpx;right: 30rpx;">
+	<image src="/images/add.png" style="width: 80rpx;height: 80rpx;" bindtap="add"></image>
+</view>
+<view wx:for="{{list}}" wx:for-index="indexs" style="margin-top: 100rpx;">
+	<view style="display: flex;flex-direction: row;margin: 0rpx 12rpx;" hover-class="hoverh" bindtap="godetail" data-item="{{item}}">
+
+		<!-- 头像 -->
+		<view>
+			<image style="width: 100rpx;height: 100rpx;border-radius: 30rpx;" src="{{item.bosstousrc}}"></image>
+		</view>
+
+		<!-- 昵称和内容 -->
+		<view style="display: flex;flex-direction: column;margin: 0rpx 12rpx;width: 100%;">
+			<view>
+				<view style="margin-left: 12rpx;color: #586B94;">{{item.nick}}</view>
+				<view style="margin-left: 12rpx;font-size: 11pt;margin-left: 12rpx;">{{item.content}}</view>
+			</view>
+			<!--视屏的呈现-->
+			<video wx:if="{{item.video}}" src="{{item.video}}"></video>
+			<!-- 一张图片 -->
+			<view wx:if="{{item.images.length==1}}">
+				<block wx:for="{{item.images}}">
+					<image catchtap="previewSqs" data-src="{{item}}" data-index="{{indexs}}" style="width: 98%;margin-left: 15rpx" mode="widthFix" src="{{item}}" ></image>
+				</block>
+			</view>
+			<!--两张图片-->
+			<view wx:if="{{item.images.length==2}}">
+				<block wx:for="{{item.images}}">
+					<image catchtap="previewSqs" data-src="{{item}}" data-index="{{indexs}}" style="width: 47%;margin-left: 15rpx;" mode="widthFix" src="{{item}}"></image>
+				</block>
+			</view>
+			<!--三张图片-->
+			<view wx:if="{{item.images.length==3}}">
+				<block wx:for="{{item.images}}">
+					<image catchtap="previewSqs" data-src="{{item}}" data-index="{{indexs}}" style="width: 30%;margin-left: 15rpx;" mode="widthFix" src="{{item}}"></image>
+				</block>
+			</view>
+			<!-- 四张图片 -->
+			<view wx:if="{{item.images.length==4}}" >
+				<block wx:for="{{item.images}}">
+					<image catchtap="previewSqs" data-src="{{item}}" data-index="{{indexs}}" style="width: 47%;margin-left: 15rpx;" mode="widthFix" src="{{item}}"></image>
+				</block>
+			</view>
+			<!--四张图片以上-->
+			<view wx:if="{{item.images.length>4}}" >
+				<block wx:for="{{item.images}}" >
+					<image catchtap="previewSqs" data-src="{{item}}" data-index="{{indexs}}" style="width: 30%;margin-left: 15rpx;" mode="widthFix" src="{{item}}"></image>
+				</block>
+			</view>
+			<!--浏览量-->
+			<view style="margin-left: 12rpx;font-size: 9pt;color: darkgray;margin-top: 12rpx;">
+				<text>浏览:</text>
+				<text style="color: #546ae6;margin-left: 10rpx;">{{item.look}}</text>
+			</view>
+			<!--时间-->
+			<view style="margin-left: 12rpx;font-size: 9pt;color: #7F7F7F;margin-top: 12rpx;">{{item.time}}</view>
+		</view>
+	</view>
+
+</view>

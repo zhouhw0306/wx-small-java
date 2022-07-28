@@ -1,0 +1,6 @@
+/* pages/friDetail/friDetail.wxss */
+video{
+	width: 96%;
+	height: 300rpx;
+	margin:5rpx 12rpx;
+}
