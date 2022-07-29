@@ -8,7 +8,8 @@ Page({
     data: {
 
         list:[],
-        openid : "oB0bP5CYzznfkmIy81JAVmZEvkBw"
+        openid : "",
+        flag : false
     },
 
     //跳转详情
@@ -65,6 +66,7 @@ Page({
 
     //删除
     delete(e){
+
         let id = e.target.dataset._id
         wx.showModal({
           title : "删除动态",
@@ -91,6 +93,21 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
+        wx.cloud.callFunction({
+            name:'getOpenid',
+            
+          }).then(res=>{
+              //res就将openid返回了
+              this.setData({
+                    openid : res.result.openid
+              })
+              //如果是管理员才能发布动态
+              if(res.result.openid=="oB0bP5CYzznfkmIy81JAVmZEvkBw"){
+                this.setData({
+                    flag : true
+              })
+              }
+          })
 
     },
 
@@ -98,7 +115,7 @@ Page({
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady() {
-
+        
     },
 
     /**
