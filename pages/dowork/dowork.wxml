@@ -1,5 +1,5 @@
 <!--pages/dowork/dowork.wxml-->
-<view>
+<view style="margin-top: 10rpx;">
 	<text class="title" wx:if="{{data.qsType=='1'}}">单选题</text>
 	<view style="color: grey;">{{data.question}}</view>
 	<view hover-class="hoverh" class="{{data.result=='A'&&end? 'right' : 'defult'}} {{youOption=='A'&& data.result!='A'?'error':'defult'}}" bindtap="submit" data-option='A'>A: {{data.optionA}}</view>
@@ -14,7 +14,7 @@
 </view>
 
 <view wx:if="{{end}}" style="height: 100%;width: 100%;text-align: center;margin:0; padding:0px;">  
-	<button style="clear: none;position: absolute; bottom: 80px;margin-left: 28%;" type="primary" plain bindtap="next">下一题</button>
+	<button style="clear: none;position: absolute; bottom: 80px;margin-left: 28%;color: #28d1a7;border-color: #28caa2;border-radius: 30rpx;" hover-class="hoverr" type="primary" plain bindtap="next">下一题</button>
 </view>
 	
 

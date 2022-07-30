@@ -9,7 +9,7 @@ Page({
 
         list:[],
         openid : "",
-        flag : false
+        // flag : false
     },
 
     //跳转详情
@@ -102,11 +102,11 @@ Page({
                     openid : res.result.openid
               })
               //如果是管理员才能发布动态
-              if(res.result.openid=="oB0bP5CYzznfkmIy81JAVmZEvkBw"){
-                this.setData({
-                    flag : true
-              })
-              }
+            //   if(res.result.openid=="oB0bP5CYzznfkmIy81JAVmZEvkBw"){
+            //     this.setData({
+            //         flag : true
+            //     })
+            //   }
           })
 
     },

@@ -37,3 +37,7 @@ view{
 	/* background-color: rgb(250, 210, 210); */
 	background-image: linear-gradient(to right,rgb(250, 210, 210),rgb(253, 243, 243));
 }
+
+.hoverr{
+	background-color: #e1ece9 !important;
+}

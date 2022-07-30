@@ -5,14 +5,14 @@
 	<view style="margin-top: 50rpx; margin-left: 38rpx;margin-right: 30rpx;">
 		1. 题目收集来源于网络,如有侵权联系:<text style="color: crimson;margin-left: 20rpx;">QQ2466864587</text>
 	</view>
+	<view style="margin-left: 38rpx;margin-right: 50rpx;margin-top: 5px;">
+		2. 有任何使用问题都可以联系我
+	</view>
+	<view style="margin-left: 38rpx;margin-right: 50rpx;margin-top: 5px;">
+		3. 发布不当提问或违反相关法律法规,将被封禁,谢谢配合
+	</view>
 	
-	<view style="margin-left: 38rpx;margin-right: 50rpx;margin-top: 5px;">
-		2. 发布不当提问或违反相关法律法规,将被封禁,谢谢配合
-	</view>
-	<view style="margin-left: 38rpx;margin-right: 50rpx;margin-top: 5px;">
-		3. 有任何使用问题都可以联系我
-	</view>
-	<view style="margin-left: 38rpx;margin-right: 50rpx;margin-top: 5px;">
-		4. 为符合个人小程序发布规则,只有我自己才能在广场发布问题(笑)
-	</view>
+	<!-- <view style="margin-left: 38rpx;margin-right: 50rpx;margin-top: 5px;">
+		4. 为符合个人小程序发布规则,只有我自己才能在广场发布问题
+	</view> -->
 </view>

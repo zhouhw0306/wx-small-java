@@ -22,7 +22,7 @@ Page({
         flag : '',  
         end : false, //是否显示答案
         first : true, //该题是否第一次提交
-        total : 20 //题库数量
+        total : 50 //题库数量
     },
 
 
@@ -68,14 +68,9 @@ Page({
     /**
      * 生命周期函数--监听页面加载
      */
+    //只在第一次加载时打开
     onLoad(options) {
-        db.collection("bank").count()
-        .then(res=>{
-            this.setData({
-                total : res.total
-            })
-        })  
-        this.next()
+        
     },
 
     /**
@@ -88,8 +83,15 @@ Page({
     /**
      * 生命周期函数--监听页面显示
      */
+    //每次打开这个页面都加载
     onShow() {
-
+        db.collection("bank").count()
+        .then(res=>{
+            this.setData({
+                total : res.total
+            })
+        })  
+        this.next()
     },
 
     /**

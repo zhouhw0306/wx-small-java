@@ -1,9 +1,4 @@
 <!--pages/contact/contact.wxml-->
-<!-- <view class='top' wx:if='{{!yincang}}'>
- <image class='touxiang' src='{{yonghu.avatarUrl}}'></image>
- <text class='name'>{{yonghu.nickName}}</text>
-</view>
-<button wx:if='{{yincang}}' open-type="getUserInfo" type='primary' lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button> -->
 <!-- 用户授权,则显示头像 昵称 -->
 <view class="header" wx:if="{{isShowUserName}}" bindtap="quit">
 	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>

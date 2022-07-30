@@ -1,44 +1,84 @@
 <!--pages/home/home.wxml-->
-<view bindtap="todetail" data-type="1" hover-class="hoverh">
-	<image src="/images/java.png" style="width: 15px;" mode="widthFix"/> JavaSE	  <!-- type1 -->
-</view>
+<view class="swiper_tab_view">
+ 	<scroll-view scroll-x='true' scroll-left="{{scrollleft}}" class='tab-h'>
+		<view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0"
+		bindtap="swichNav">Java</view> 
 
-<view bindtap="todetail" data-type="2" hover-class="hoverh">
-	<image src="/images/jdbc.png" style="width: 12px;" mode="widthFix"/> JDBC	<!-- type2 -->
-</view>
+		<view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" 
+		bindtap="swichNav">MySQl</view>
 
-<view bindtap="todetail" data-type="3" hover-class="hoverh">
-	<image src="/images/servlet.png" style="width: 18px;" mode="widthFix"/> Servlet	 <!-- type3 -->
-</view>
+		<view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" 
+		bindtap="swichNav">C</view> 
 
-<view bindtap="todetail" data-type="4" hover-class="hoverh">
-	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> Spring	<!-- type4 -->
-</view>
+		<view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" 
+		bindtap="swichNav">C++</view> 
 
-<view bindtap="todetail" data-type="5" hover-class="hoverh">
-	<image src="/images/mybatis.png" style="width: 15px;" mode="widthFix"/> Mybatis	  <!-- type5 -->
+		<view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" 
+		bindtap="swichNav">Python</view>  
+    </scroll-view>
 </view>
+ 
+ <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">    
+     <swiper-item>  
+		<view bindtap="todetail" data-type="1" hover-class="hoverh" class="total">
+			<image src="/images/java.png" style="width: 15px;" mode="widthFix"/> JavaSE	  <!-- type1 -->
+		</view>
 
-<view bindtap="todetail" data-type="6" hover-class="hoverh">
-	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringMVC	<!-- type6 -->
-</view>
+		<view bindtap="todetail" data-type="2" hover-class="hoverh" class="total">
+			<image src="/images/jdbc.png" style="width: 12px;" mode="widthFix"/> JDBC	<!-- type2 -->
+		</view>
 
-<view bindtap="todetail" data-type="7" hover-class="hoverh">
-	<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringBoot	<!-- type7 -->
-</view>
+		<view bindtap="todetail" data-type="3" hover-class="hoverh" class="total">
+			<image src="/images/servlet.png" style="width: 18px;" mode="widthFix"/> Servlet	 <!-- type3 -->
+		</view>
 
-<view bindtap="todetail" data-type="8" hover-class="hoverh">
-	<image src="/images/cloud.png" style="width: 15px;" mode="widthFix"/> SpringCloud	<!-- type8 -->
-</view>
+		<view bindtap="todetail" data-type="4" hover-class="hoverh" class="total">
+			<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> Spring	<!-- type4 -->
+		</view>
 
-<view bindtap="todetail" data-type="9" hover-class="hoverh">
-	<image src="/images/dubbo.png" style="width: 15px;" mode="widthFix"/> Dubbo 	<!-- type9 -->
-</view>
+		<view bindtap="todetail" data-type="5" hover-class="hoverh" class="total">
+			<image src="/images/mybatis.png" style="width: 15px;" mode="widthFix"/> Mybatis	  <!-- type5 -->
+		</view>
 
-<view bindtap="todetail" data-type="10" hover-class="hoverh">
-	<image src="/images/redis.png" style="width: 15px;" mode="widthFix"/> Redis  	<!-- type10 -->
-</view>
+		<view bindtap="todetail" data-type="6" hover-class="hoverh" class="total">
+			<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringMVC	<!-- type6 -->
+		</view>
 
-<view bindtap="todetail" data-type="11" hover-class="hoverh">
-	<image src="/images/docker.png" style="width: 15px;" mode="widthFix"/> Docker	<!-- type11 -->
-</view>
+		<view bindtap="todetail" data-type="7" hover-class="hoverh" class="total">
+			<image src="/images/spring.png" style="width: 15px;" mode="widthFix"/> SpringBoot	<!-- type7 -->
+		</view>
+
+		<view bindtap="todetail" data-type="8" hover-class="hoverh" class="total">
+			<image src="/images/cloud.png" style="width: 15px;" mode="widthFix"/> SpringCloud	<!-- type8 -->
+		</view>
+
+		<view bindtap="todetail" data-type="9" hover-class="hoverh" class="total">
+			<image src="/images/dubbo.png" style="width: 15px;" mode="widthFix"/> Dubbo 	<!-- type9 -->
+		</view>
+
+		<view bindtap="todetail" data-type="10" hover-class="hoverh" class="total">
+			<image src="/images/redis.png" style="width: 15px;" mode="widthFix"/> Redis  	<!-- type10 -->
+		</view>
+
+		<view bindtap="todetail" data-type="11" hover-class="hoverh" class="total">
+			<image src="/images/docker.png" style="width: 15px;" mode="widthFix"/> Docker	<!-- type11 -->
+		</view>
+	</swiper-item>  
+	     
+    <swiper-item>  
+        <view>敬请期待</view>  
+    </swiper-item>   
+ 
+    <swiper-item>  
+        <view>敬请期待</view>  
+    </swiper-item>   
+ 
+    <swiper-item>  
+        <view>敬请期待</view>  
+    </swiper-item>   
+ 
+    <swiper-item>  
+        <view>敬请期待</view>  
+    </swiper-item>   
+
+ </swiper>
