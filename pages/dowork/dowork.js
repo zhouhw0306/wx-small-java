@@ -83,8 +83,9 @@ Page({
     /**
      * 生命周期函数--监听页面显示
      */
-    //每次打开这个页面都加载
+    //每次刷新这个页面都加载
     onShow() {
+        //console.log(123)
         db.collection("bank").count()
         .then(res=>{
             this.setData({

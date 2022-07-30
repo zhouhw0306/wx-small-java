@@ -11,10 +11,10 @@
 		bindtap="swichNav">C</view> 
 
 		<view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" 
-		bindtap="swichNav">C++</view> 
+		bindtap="swichNav">Vue</view> 
 
 		<view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" 
-		bindtap="swichNav">Python</view>  
+		bindtap="swichNav">Tools</view>  
     </scroll-view>
 </view>
  
@@ -66,19 +66,30 @@
 	</swiper-item>  
 	     
     <swiper-item>  
-        <view>敬请期待</view>  
+        <view bindtap="todetail" data-type="12" hover-class="hoverh" class="total">
+			<image src="/images/mysql.png" style="width: 17px;vertical-align:middle;" mode="widthFix"/> Mysql	<!-- type12 -->
+		</view>  
     </swiper-item>   
  
     <swiper-item>  
-        <view>敬请期待</view>  
+        <view bindtap="todetail" data-type="13" hover-class="hoverh" class="total">
+			<image src="/images/c.png" style="width: 20px;vertical-align:middle;" mode="widthFix"/> C	<!-- type13 -->
+		</view>
     </swiper-item>   
  
     <swiper-item>  
-        <view>敬请期待</view>  
+        <view bindtap="todetail" data-type="14" hover-class="hoverh" class="total">
+			<image src="/images/vue.png" style="width: 17px;vertical-align:middle;" mode="widthFix"/> Vue	<!-- type14 -->
+		</view> 
     </swiper-item>   
  
     <swiper-item>  
-        <view>敬请期待</view>  
+        <view bindtap="todetail" data-type="15" hover-class="hoverh" class="total">
+			<image src="/images/m.png" style="width: 17px;vertical-align:middle;" mode="widthFix"/> Maven	<!-- type15 -->
+		</view> 
+		<view bindtap="todetail" data-type="16" hover-class="hoverh" class="total">
+			<image src="/images/linux.png" style="width: 17px;vertical-align:middle;" mode="widthFix"/> Linux	<!-- type16 -->
+		</view>
     </swiper-item>   
 
  </swiper>
