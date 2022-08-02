@@ -22,6 +22,7 @@ view{
 	border: 1rpx solid;
 	border-color: #2ABF99;
 	border-radius: 10rpx;
+	margin-left: 5px;
 }
 
 .defult{

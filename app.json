@@ -2,10 +2,11 @@
   "lazyCodeLoading": "requiredComponents",
   "pages":[
     "pages/home/home",
-    "pages/dowork/dowork",
-    "pages/friends/friends",
-    "pages/friDetail/friDetail",
+    "pages/shua/shua",
+    "pages/friends/friends", 
+    "pages/friDetail/friDetail", 
     "pages/add/add",
+    "pages/dowork/dowork",
     "pages/contact/contact",
     "pages/detail/detail",
     "pages/detailSub/detailSub",
@@ -30,16 +31,16 @@
         "selectedIconPath": "/images/home-active.png"
       },
       {
-        "pagePath": "pages/dowork/dowork",
+        "pagePath": "pages/shua/shua",
         "text" : "挑战",
         "iconPath": "/images/challenge.png",
         "selectedIconPath": "/images/challenge-active.png"
       },
-      {
-        "pagePath": "pages/friends/friends",
-        "text" : "广场",
-        "iconPath": "/images/friends.png",
-        "selectedIconPath": "/images/friends-active.png"
+      { 
+        "pagePath": "pages/friends/friends", 
+        "text" : "广场", 
+        "iconPath": "/images/friends.png", 
+        "selectedIconPath": "/images/friends-active.png" 
       },
       {
         "pagePath": "pages/contact/contact",

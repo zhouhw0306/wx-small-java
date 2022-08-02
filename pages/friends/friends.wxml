@@ -1,6 +1,6 @@
 <!--pages/friends/friends.wxml-->
 <view style="position: absolute;top: 10rpx;right: 30rpx;">
-	<image wx:if="{{flag}}" src="/images/add.png" style="width: 80rpx;height: 80rpx;" bindtap="add"></image>
+	<image src="/images/add.png" style="width: 80rpx;height: 80rpx;" bindtap="add"></image>
 </view>
 <view wx:for="{{list}}" wx:for-index="indexs" style="margin-top: 100rpx;">
 	<view style="display: flex;flex-direction: row;margin: 0rpx 12rpx;" hover-class="hoverh" bindtap="godetail" data-item="{{item}}">

@@ -22,7 +22,8 @@ Page({
         flag : '',  
         end : false, //是否显示答案
         first : true, //该题是否第一次提交
-        total : 50 //题库数量
+        total : 50 ,//题库数量
+        params : {}
     },
 
 
@@ -51,7 +52,7 @@ Page({
 
     next(){
         let num = Math.floor(Math.random()*this.data.total)
-        db.collection("bank").skip(num).limit(1).get({
+        db.collection("bank").skip(num).limit(1).where(this.data.params).get({
             success : res=>{
                 this.setData({
                     data : res.data[0],
@@ -70,7 +71,19 @@ Page({
      */
     //只在第一次加载时打开
     onLoad(options) {
-        
+        var type = options.type
+        let params  = {};
+        if(type!="0"){  
+            params.type = type;
+        }   
+        db.collection("bank").where(params).count()
+        .then(res=>{
+            this.setData({
+                total : res.total,
+                params : params
+            })
+            this.next()
+        })      
     },
 
     /**
@@ -86,13 +99,7 @@ Page({
     //每次刷新这个页面都加载
     onShow() {
         //console.log(123)
-        db.collection("bank").count()
-        .then(res=>{
-            this.setData({
-                total : res.total
-            })
-        })  
-        this.next()
+        
     },
 
     /**

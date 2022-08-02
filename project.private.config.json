@@ -42,6 +42,20 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/shua/shua",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/shua/shua",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

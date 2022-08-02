@@ -1,0 +1,26 @@
+<!--pages/shua/shua.wxml-->
+<view class="title">
+    <view style="margin-left: 10px;font-size: 20px;">刷题
+  		<image src="/images/work.png" style="width: 20px; vertical-align:-2px" mode="widthFix"/>
+	</view>
+</view>
+
+<view class="body">
+	<view bindtap="todowork" data-type="0" hover-class="hoverh" class="ti" style="margin-bottom: 10px;">
+		<text class="word">随机刷题</text>  
+		<image src="/images/right.png" class="img" mode="widthFix"/>
+	</view>
+	<view bindtap="todowork" data-type="1" hover-class="hoverh" class="ti" style="margin-left: 10px;">
+		<text class="word">Java</text>
+		<image src="/images/right.png" class="img" mode="widthFix"/>
+	</view>
+	<view bindtap="todowork" data-type="2" hover-class="hoverh" class="ti" style="margin-right: 10px;">
+		<text class="word">数据结构</text>
+		<image src="/images/right.png" class="img" mode="widthFix"/>
+	</view>
+	<view bindtap="todowork" data-type="3" hover-class="hoverh"class="ti">
+		<text class="word">JS</text>
+		<image src="/images/right.png" class="img" mode="widthFix"/>
+	</view>
+</view>
+

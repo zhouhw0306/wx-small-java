@@ -9,7 +9,7 @@ Page({
 
         list:[],
         openid : "",
-        flag : false
+    
     },
 
     //跳转详情
@@ -66,7 +66,7 @@ Page({
 
     //删除
     delete(e){
-
+        var that = this
         let id = e.target.dataset._id
         wx.showModal({
           title : "删除动态",
@@ -75,13 +75,11 @@ Page({
               if(res.confirm == true){
                   db.collection("friends").doc(id).remove()
                   .then(res=>{
+                      that.onShow()
                       wx.showToast({
                         title: '删除成功',
                         icon :"none"
-                      })
-                      wx.switchTab({
-                        url: '/pages/friends/friends',
-                      })
+                      })                    
                   })
               }
           }
@@ -101,12 +99,6 @@ Page({
               this.setData({
                     openid : res.result.openid
               })
-              //如果是管理员才能发布动态
-              if(res.result.openid=="oB0bP5CYzznfkmIy81JAVmZEvkBw"){
-                this.setData({
-                    flag : true
-              })
-              }
           })
 
     },

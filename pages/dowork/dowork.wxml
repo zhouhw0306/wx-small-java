@@ -1,5 +1,8 @@
 <!--pages/dowork/dowork.wxml-->
 <view style="margin-top: 10rpx;">
+	<text class="title" style="border-color: rgb(230, 108, 78);color:rgb(230, 108, 78);" wx:if="{{data.type=='1'}}">Java</text>
+	<text class="title" style="border-color: rgb(230, 108, 78);color:rgb(230, 108, 78);" wx:if="{{data.type=='2'}}">数据结构</text>
+	<text class="title" style="border-color: rgb(230, 108, 78);color:rgb(230, 108, 78);" wx:if="{{data.type=='3'}}">JS</text>
 	<text class="title" wx:if="{{data.qsType=='1'}}">单选题</text>
 	<view style="color: grey;">{{data.question}}</view>
 	<view hover-class="hoverh" class="{{data.result=='A'&&end? 'right' : 'defult'}} {{youOption=='A'&& data.result!='A'?'error':'defult'}}" bindtap="submit" data-option='A'>A: {{data.optionA}}</view>
